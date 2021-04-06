@@ -1,0 +1,98 @@
+canvas{
+  position:relative;
+}
+
+td,th {
+    vertical-align: top;
+    text-align: left;
+    padding-right : 20px;
+}
+
+.legend_block{
+  width : 10px;
+  height : 10px;
+  display : inline-block;
+  margin-right:5px;
+}
+
+#infobox{
+  background: white;
+  padding:5px;
+  position: absolute; 
+  outline-style: solid;
+  white-space:nowrap;
+  left: -1000px;
+  overflow:hidden;
+  pointer-events: none; 
+  z-index:2;
+}
+
+div#gmd_names {
+  text-orientation: mixed;
+  writing-mode: vertical-lr;
+  bottom : 0;
+  left : -2px;
+  padding-top:2px;
+}
+
+div#cmd_names {
+  right : 0;
+  top : -2px;
+  padding-left: 2px;
+}
+
+div#gmd_names,div#cmd_names{
+  position: fixed;
+  background : white;
+  outline: 1px solid;
+  white-space:nowrap;
+  z-index:5;
+}
+
+#cursor, #cell_cursor, #gene_cursor{
+  position: absolute; 
+  outline: 2px solid;
+  pointer-events: none;
+  overflow:hidden;
+  z-index:3;
+}
+
+#cursor, #cell_cursor{
+  top: 0;
+  left: -1000px;
+}
+
+#gene_cursor{
+  left: 0;
+  top: -1000px;
+}
+
+.dragbox{
+  position: absolute; 
+  outline-style: dashed;
+  white-space:nowrap;
+  pointer-events: none;
+  opacity: 0.75;
+  z-index:1;
+}
+
+div#heatmap_container {
+  background-color:white;
+  position: absolute;
+}
+
+div#cmd_container,div#gmd_container {
+  background-color:white;
+  position: absolute;
+  z-index:2;
+}
+
+
+div#white_rectangle{
+  background-color:white;
+  position: fixed;
+  white-space:nowrap;
+  overflow:hidden;
+  z-index:4;
+}
+
